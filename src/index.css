@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+
+  --bg-gradient-start: #faecec;
+  --bg-gradient-middle-1: #f0faf2;
+  --bg-gradient-middle-2: #e2eef6;
+  --bg-gradient-end: #f5f6e7;
+
+  --grid-color: #e0e3e3;
+  --grid-size: 100px;
+
+
+  --font-primary: "Open Sans", sans-serif;
+}
+
+
+
+body {
+  margin: 0;
+  font-family: var(--font-primary);
+  overflow: hidden;       
+  position: relative;    
+
+  background-image: linear-gradient(
+    to right,
+    var(--bg-gradient-start),
+    var(--bg-gradient-middle-1),
+    var(--bg-gradient-middle-2),
+    var(--bg-gradient-end)
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0; 
+
+  background-image:
+    linear-gradient(to right, var(--grid-color) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-color) 1px, transparent 1px);
+
+  background-size: var(--grid-size) var(--grid-size);
+  pointer-events: none; 
+  z-index: -1;
+}
