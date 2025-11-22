@@ -2,7 +2,9 @@ import React, { Children } from 'react'
 import { CgSoftwareUpload } from "react-icons/cg";
 import { GoPlus } from "react-icons/go";
 import { useMotionValue,useTransform,motion } from 'framer-motion';
-function SafariCard({children,title,corner}) {
+import { AnimatePresence} from "framer-motion";
+import clsx from 'clsx';
+function SafariCard({children,title,corner,className}) {
     const x = useMotionValue(0)
     const y = useMotionValue(0)
     const rotateX = useTransform(y,[-100,100],[30,-30])
@@ -29,13 +31,19 @@ function SafariCard({children,title,corner}) {
 //   };
 
   return (
-    <div style={{perspective:2000}}>
+    <div 
+    style={{perspective:2000}} >
+        <AnimatePresence mode="wait">
             <motion.div style={{x,y,rotateX,rotateY,z:100}}
             drag
             dragElastic={0.18}
             dragConstraints={{top:0,bottom:0,right:0,left:0}}
             whileTap={{cursor:'grabbing'}}
-            className='bg-white rounded-xl  min-w-[500px]  relative shadow-xl '  
+                        initial={{ opacity: 0, scale: 0.8, y: 60 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            exit={{ opacity: 0, scale: 0.8, y: 60 }}
+            transition={{ duration: 0.25, ease: "easeOut" }}
+            className={clsx('bg-white rounded-xl  min-w-[500px]  relative shadow-xl ',className  )}
 
 >
 
@@ -73,6 +81,7 @@ function SafariCard({children,title,corner}) {
         
       
     </motion.div>
+    </AnimatePresence>
 
     </div>
 

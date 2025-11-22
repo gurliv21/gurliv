@@ -22,7 +22,11 @@
 body {
   margin: 0;
   font-family: var(--font-primary);
-  overflow: hidden;       
+  body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+      
   position: relative;    
 
   background-image: linear-gradient(
