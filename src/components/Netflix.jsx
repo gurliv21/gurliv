@@ -46,6 +46,7 @@ function Netflix() {
           src={video}
           autoPlay
           muted
+          preload="none"
           playsInline
           width="100%"
           style={{ maxWidth: 800 }}
