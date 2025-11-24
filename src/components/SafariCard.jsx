@@ -43,7 +43,7 @@ function SafariCard({children,title,corner,className}) {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.8, y: 60 }}
             transition={{ duration: 0.25, ease: "easeOut" }}
-            className={clsx('bg-white rounded-xl  min-w-[500px]  relative shadow-xl ',className  )}
+            className={clsx('bg-white rounded-xl  sm:min-w-[500px]  relative shadow-xl ',className  )}
 
 >
 
@@ -53,7 +53,7 @@ function SafariCard({children,title,corner,className}) {
                     <div className={`${circle} h-3 inline-flex w-3 rounded-full mr-2`} key={index}></div>
                 ))}
             </div>
-            <div className='w-[240px] border rounded-md text-center p-1'>
+            <div className='sm:w-[240px] w-[160px] border rounded-md text-center p-1'>
                 {title}
 
             </div>

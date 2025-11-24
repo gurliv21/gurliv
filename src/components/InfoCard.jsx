@@ -13,9 +13,9 @@ function InfoCard() {
         {name:"Mail",color:"#C2E2FA",link:""}
       ]
   return (
-   <SafariCard title={"gurlivbajwa.com"} className={"relative h-[380px] w-[400px]"}
+   <SafariCard title={"gurlivbajwa.com"} className={"relative sm:h-[380px] sm:w-[400px]"}
 >
-      <div className='mt-6 flex gap-8'>
+      <div className='mt-6 sm:flex sm:gap-8'>
         <div>
                   <p className='text-2xl leading-10'>I'm a <span className='relative'><img src={img2 } className='h-[70px] w-[380px] absolute -top-4 right-0 -z-10'/>Software Engineer</span> <br/>who builds immersive and <br/>user -friendly <span className='relative '> 
 Aplications <img src={svg1} className='w-[152px] absolute bottom-0 right-0'/></span><br/>that users love</p>
@@ -47,7 +47,7 @@ Aplications <img src={svg1} className='w-[152px] absolute bottom-0 right-0'/></s
         </div>
 
 
-       <div className='w-[160px] h-[120px] '>
+       <div className=' hidden sm:block w-[160px] h-[120px] '>
         <div className='bg-blue-200 p-1'>
                     <img src={img} className=''/>
 
@@ -56,7 +56,7 @@ Aplications <img src={svg1} className='w-[152px] absolute bottom-0 right-0'/></s
 
 
        </div>
-       <div className='absolute -bottom-32 -right-56'>
+       <div className='sm:absolute sm:-bottom-32 sm:-right-56 hidden  sm:block'>
                <Contact/>
 
        </div>

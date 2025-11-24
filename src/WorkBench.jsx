@@ -46,27 +46,36 @@ function WorkBench() {
   return (
     <div className='relative h-screen' >
       <Header/>
+            <div className='flex  gap-7 m-9 z-40'>
+              <Folder image={folder} name="Projects" className="sm:absolute sm:right-12 sm:top-20 " onClick={()=>openApp("projects")}/>
+      <Folder image={text} name="Skills.txt" className="sm:absolute sm:right-36 sm:top-40" onClick={()=>openApp("skills")}/>
+       <Folder image={file} name="resume.pdf" className="sm:absolute sm:right-12 sm:top-64" link="https://drive.google.com/file/d/1KrH6wfoi37L7kwMfi0Ra3US0M8N__QZv/view?usp=share_link"/>
+       <Folder image={folder} name="Contact Me" className="sm:absolute sm:right-12 sm:top-96" onClick={()=>openApp("contact")}/>
+
+      </div>
+
 
         <div>
-          <div className='absolute top-[40vh] left-1/2 -translate-x-1/2 -translate-y-1/2 z-10'>
+          <div className='absolute sm:top-[40vh] top-[44vh] left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 '>
             {renderActiveApp()}
           </div>
 
 
       </div>
-      <div className='absolute left-16 top-20 '>
+      <div className='sm:absolute sm:left-16 sm:top-20 opacity-85 sm:opacity-100 fixed bottom-0 '>
               <Daisy/>
 
       </div>
 
 
 
-      <Folder image={folder} name="Projects" className="absolute right-12 top-20 " onClick={()=>openApp("projects")}/>
-      <Folder image={text} name="Skills.txt" className="absolute right-36 top-40" onClick={()=>openApp("skills")}/>
-       <Folder image={file} name="resume.pdf" className="absolute right-12 top-64" link=""/>
-       <Folder image={folder} name="Contact Me" className="absolute right-12 top-96" onClick={()=>openApp("contact")}/>
 
-      <Footer/>
+        <div className='hidden sm:block'>
+                <Footer/>
+
+        </div>
+
+
          
       
     </div>

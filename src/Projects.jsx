@@ -43,8 +43,8 @@ function Projects() {
         exit={{ opacity: 0, y: -40, scale: 0.9 }}
         transition={{ duration: 0.35, ease: "easeOut" }}
       >
-        <div className="absolute -bottom-44 -left-40">
-                  <Finder className="z-50 w-[400px] " title="Projects" name="check out my latest Projects">
+        <div className="absolute sm:-bottom-44 sm:-left-40  -bottom-72">
+                  <Finder className="z-50 sm:w-[400px] w-[350px] " title="Projects" name="check out my latest Projects">
           
           <div className="flex gap-6 mx-3 my-3 flex-wrap ">
             {projects.map((c,i)=>(
@@ -59,10 +59,10 @@ function Projects() {
 
         <SafariCard
           title={projects[index].name}
-          className="w-[550px] "
+          className="sm:w-[550px] "
           corner={
             <div className="p-4 relative">
-              <a className="gap-2 bg-gray-100 inline-flex rounded-lg p-1 px-6 text-sm shadow-md text-gray-700 h-7 font-bold absolute -top-6 -right-4 cursor-pointer"
+              <a className="gap-2 bg-gray-100 inline-flex rounded-lg p-1 px-6 text-sm shadow-md text-gray-700 h-7 font-bold absolute -top-6 sm:-right-4 cursor-pointer"
               href={projects[index].link} target="_blank" rel="noopener noreferrer">
                 Visit <FaRegHandPointer className="my-auto rotate-45" />
               </a>
@@ -75,7 +75,7 @@ function Projects() {
             </div>
           }
         >
-          <div className="w-[530px] aspect-video">
+          <div className="sm:w-[530px]  w-[350px] aspect-video">
             
             {isVideo ? (
               <video
@@ -90,7 +90,8 @@ function Projects() {
             ) : (
               <img
                 src={projects[index].image}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover "
+
               />
             )}
 

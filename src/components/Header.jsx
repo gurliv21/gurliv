@@ -39,7 +39,7 @@ function Header() {
             <p>{date.day}</p>
             <p>{date.month}</p>
             <p>{date.date}</p>
-            <p>{date.time}</p>
+            <p className='hidden sm:block'>{date.time}</p>
 
         </div>
       
