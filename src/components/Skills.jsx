@@ -6,15 +6,11 @@ function Skills() {
 const stacks = [
         {
       category: "Language",
-      tech: ["Java", "Python", "JavaScript"],
+      tech: ["TypeScript", "Python", "JavaScript"],
     },
     {
       category: "Frontend",
-      tech: ["React.js", "Next.js", "TypeScript"],
-    },
-    {
-      category: "Mobile",
-      tech: ["React Native", "Expo"],
+      tech: ["React.js", "React Native"],
     },
     {
       category: "Styling",
@@ -26,11 +22,11 @@ const stacks = [
     },
     {
       category: "Database",
-      tech: ["MongoDB", ],
+      tech: ["MongoDB","PostgreSQL" ],
     },
     {
-      category: "Dev Tools",
-      tech: ["Git", "GitHub"],
+      category: "Cloud",
+      tech: ["AWS"],
     },
   ];
   return (

@@ -13,7 +13,7 @@ function InfoCard() {
         {name:"Mail",color:"#C2E2FA",link:""}
       ]
   return (
-   <SafariCard title={"gurlivbajwa.com"} className={"relative sm:h-[380px] sm:w-[400px]"}
+   <SafariCard title={"gurlivbajwa.com"} className={"relative sm:h-[420px] sm:w-[400px]"}
 >
       <div className='mt-6 sm:flex sm:gap-8'>
         <div>
@@ -21,7 +21,29 @@ function InfoCard() {
 Aplications <img src={svg1} className='w-[152px] absolute bottom-0 right-0'/></span><br/>that users love</p>
             <div className='mt-8 '>
               <p>Experience</p>
-              <div className='flex gap-3 mt-3'>
+              <div className='flex gap-2 mt-3'>
+                <div className='bg-[#ad23fc] h-[42px] w-[42px] my-auto rounded-md'/>
+                <div>
+                  <div className='flex  gap-4'>
+                    <p className='text-sm font-bold'>Better Software</p>
+                                    <p className='bg-gray-200 rounded-md text-[11px] inline-flex px-1 my-auto'>Dec 2025 - Feb 2026</p>
+
+                  </div>
+                                  
+                <p className='text-sm text-black/70'>Software Engineer Intern</p>
+
+
+                </div>
+                
+
+
+
+
+              </div>
+
+
+            </div>
+            <div className='flex gap-3 mt-3'>
                 <div className='bg-[#1363DF] h-[42px] w-[42px] my-auto rounded-md'/>
                 <div>
                   <div className='flex  gap-6'>
@@ -34,6 +56,7 @@ Aplications <img src={svg1} className='w-[152px] absolute bottom-0 right-0'/></s
 
 
                 </div>
+                
 
 
 
@@ -41,7 +64,7 @@ Aplications <img src={svg1} className='w-[152px] absolute bottom-0 right-0'/></s
               </div>
 
 
-            </div>
+
 
 
         </div>

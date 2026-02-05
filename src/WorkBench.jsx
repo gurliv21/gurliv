@@ -49,7 +49,7 @@ function WorkBench() {
             <div className='flex  gap-7 m-9 z-40'>
               <Folder image={folder} name="Projects" className="sm:absolute sm:right-12 sm:top-20 " onClick={()=>openApp("projects")}/>
       <Folder image={text} name="Skills.txt" className="sm:absolute sm:right-36 sm:top-40" onClick={()=>openApp("skills")}/>
-       <Folder image={file} name="resume.pdf" className="sm:absolute sm:right-12 sm:top-64" link="https://drive.google.com/file/d/1KrH6wfoi37L7kwMfi0Ra3US0M8N__QZv/view?usp=share_link"/>
+       <Folder image={file} name="resume.pdf" className="sm:absolute sm:right-12 sm:top-64" link="https://drive.google.com/file/d/1jdM7gILSlKhGhE5ZS0TNAFys_3-ZpFfY/view?usp=share_link"/>
        <Folder image={folder} name="Contact Me" className="sm:absolute sm:right-12 sm:top-96" onClick={()=>openApp("contact")}/>
 
       </div>
